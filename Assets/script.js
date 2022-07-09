@@ -148,7 +148,7 @@ playAgain.addEventListener("click",function(){
 function checkAnswer (answer){
     correct=quizQuestions[currentQuestionIndex].correctAnswer;
     if (answer ===correct && currentQuestionIndex !==finalQuestionIndex){
-        
+        alert("Correct ");
         score++;
         // showScore();
         currentQuestionIndex++;
@@ -156,6 +156,7 @@ function checkAnswer (answer){
         displayQuestions();
        
     }else if (answer!==correct && currentQuestionIndex !==finalQuestionIndex){
+        alert("Wrong ");
         currentQuestionIndex++;
         
         timeLeft=timeLeft -5;

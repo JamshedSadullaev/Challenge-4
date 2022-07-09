@@ -51,12 +51,12 @@ function startQuiz(){
    displayQuestions();
    TimeSet();
    
-//    checkAnswer ();
-}
 
+}
+// start game buttons
 startButton.addEventListener("click",startQuiz);
 function TimeSet(){
-    // displayQuestions();
+ 
     playAgain.classList.add("hide");
     highScorePage.classList.add("hide");
     timerInterval = setInterval(function() {
@@ -72,6 +72,7 @@ function TimeSet(){
     },1000);
     
 }
+// display question function
 function displayQuestions(){
     startButton.classList.add("hide");
     quizBody.classList.remove("hide");
@@ -85,6 +86,7 @@ function displayQuestions(){
 
     
 }
+// showing a score after quiz
 var userScore=document.querySelector("#userScore");
 function showScore (){
     quizBody.style.display="none";
@@ -99,16 +101,8 @@ function showScore (){
    
 
 }
+// save initials function
 
-// var msgDiv = document.querySelector("#msg");
-
-
-// renderLastRegistered();
-// function displayScore(type,message){
-//     msgDiv.textContent = message;
-//     msgDiv.setAttribute("class",type);
-
-// }
 submitScoreBtn.addEventListener("click",function (event){
     event.preventDefault();
 function renderLastRegistered(){

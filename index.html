@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Code quiz challenge</title>
+  </head>
+  <body>
+    <div class="container">
+        <div id="start">
+            <h1> This is coding quiz and you have 20 seconds to answer questions for total 5 questions. </h1>
+            <button id="startbtn">Start Quiz</button>
+            <!-- <button id="showscore" onclick="showScore()">High scores</button> -->
+            <p>Time remaining: <span  id="time">0</span></p>
+        </div>
+
+    <div id="quiz" class="hide">
+        
+        
+        <p id="questions"></p>
+        <button id="a" onclick="checkAnswer('a')">A</button>
+        <button id="b" onclick="checkAnswer('b')">B</button>
+        <button id="c" onclick="checkAnswer('c')">C</button>
+        <div id="result"></div>
+        
+        
+
+    </div>
+    <div id="gameover">
+        <div id="finalScore"></div>
+        <input type="text" size = "40"  placeholder="Enter your initials" name="initials" id ="initials"/>
+        <!-- <div id ="msg"> </div> -->
+        <button class="hide" id="submit">Save Score </button>
+    </div>
+
+      <div id ="scorePage"class="hide">
+          <!--  <h2>User initials</h2> -->
+          <p><strong>User score:</strong><span id="userScore"></span></p> 
+          <p><strong>User initials:</strong><span id="userName"></span></p>
+        
+        <div id = "highMark"></div>
+      </div>
+      <div id ="endGameBtn">
+        <button id = "playAgain" class="hide" onclick="replayQuiz()">Play Again</button>
+        
+      </div>
+        
+
+
+  <script src="./Assets/script.js"> </script>
+  </body>
+</html>

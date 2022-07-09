@@ -18,6 +18,18 @@ var quizQuestions = [{
         b:"alert('Hello World')",
         c:"alertBox('Hello World')",
     correctAnswer:"b"},
+    {
+    question:"How do you create a function in JavaScript?",
+        a:"function = myFunction()",
+        b:"function:Function()",
+        c:"function myFunction()",
+    correctAnswer:"c"},
+    {
+    question:"How does a FOR loop start?",
+        a:"for i = 1 to 5",
+        b:"for (i =0; i<=5; i++",
+        c:"for(i=0;i<=5)",
+    correctAnswer:"b"},
 ];
 var quizBody =  document.getElementById("quiz");
 var result = document.getElementById("result");
